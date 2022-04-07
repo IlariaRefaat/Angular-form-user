@@ -7,8 +7,9 @@
     <input
       id="firstName"
       class="form"
-      placeholder="firstName"
+      placeholder="First Name"
       formControlName="firstName"
+      [ngClass]="{ 'is-invalid': submitted && f['firstName'].errors }"
     />
   </div>
   <div class="form-group">
@@ -16,8 +17,9 @@
     <input
       id="lastName"
       class="form"
-      placeholder="lastName"
+      placeholder="Last Name"
       formControlName="lastName"
+      [ngClass]="{ 'is-invalid': submitted && f['lastName'].errors }"
     />
   </div>
   <div class="form-group">
@@ -26,8 +28,9 @@
       id="birthDate"
       class="form"
       type="date"
-      placeholder="birthDate"
+      placeholder="Birth Date"
       formControlName="birthDate"
+      [ngClass]="{ 'is-invalid': submitted && f['birthDate'].errors }"
     />
   </div>
   <button id="submitbuttom">Submit</button>
