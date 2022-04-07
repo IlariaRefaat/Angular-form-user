@@ -14,8 +14,8 @@ export class NewUserFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.userForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
+      firstName: ['', [Validators.required,Validators.pattern('[a-zA-Z ]*'),Validators.maxLength(10)]],
+      lastName: ['', [Validators.required,Validators.pattern('[a-zA-Z ]*'),Validators.maxLength(10)]],
       birthDate: ['', Validators.required],
     });
   }
