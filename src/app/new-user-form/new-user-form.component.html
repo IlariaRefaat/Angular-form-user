@@ -1,0 +1,34 @@
+<h2>
+  <b><u>Rgistration form: </u></b>
+</h2>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="firstName">First Name: </label>
+    <input
+      id="firstName"
+      class="form"
+      placeholder="firstName"
+      formControlName="firstName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name: </label>
+    <input
+      id="lastName"
+      class="form"
+      placeholder="lastName"
+      formControlName="lastName"
+    />
+  </div>
+  <div class="form-group">
+    <label for="birthDate">BirthDate: </label>
+    <input
+      id="birthDate"
+      class="form"
+      type="date"
+      placeholder="birthDate"
+      formControlName="birthDate"
+    />
+  </div>
+  <button id="submitbuttom">Submit</button>
+</form>

@@ -1,0 +1,6 @@
+table,th,td{
+    border: 1mm solid black;
+}
+table{
+    width: 80%;
+}
