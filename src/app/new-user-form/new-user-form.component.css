@@ -1,7 +1,18 @@
 form {
   line-height: 2;
+  text-align: center;
+  
+  font-size: larger;
+  
 }
+.form{
+  font-size: large;
+}
+
+
 input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
-
+.is-invalid{
+  border: 1px solid red;
+}
